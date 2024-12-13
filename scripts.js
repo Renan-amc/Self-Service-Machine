@@ -63,4 +63,14 @@ var products = [
         "quantity": 1
     }
 ];
+
+const { createApp } = Vue
+
+createApp({
+  data() {
+    return {
+      products: window.products
+    }
+  }
+}).mount('#app')
  
